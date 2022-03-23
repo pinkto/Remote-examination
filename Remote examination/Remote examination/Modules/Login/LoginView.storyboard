@@ -63,6 +63,10 @@
                                 <color key="tintColor" red="0.26274509800000001" green="0.29411764709999999" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Нет аккаунта?"/>
+                                <connections>
+                                    <action selector="didTapNoAccountButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="STy-Mk-OrX"/>
+                                    <segue destination="JfW-tr-hDm" kind="show" id="vFM-Nj-D63"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -92,6 +96,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="122" y="110"/>
+        </scene>
+        <!--SignUpViewController-->
+        <scene sceneID="RE1-lU-PWH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUpView" referencedIdentifier="SignUpViewController" id="JfW-tr-hDm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6O1-oW-2yV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMc-ml-Qiv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="110"/>
         </scene>
         <!--MainScreenViewController-->
         <scene sceneID="Pp6-Ti-Moq">

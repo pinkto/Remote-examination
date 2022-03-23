@@ -37,6 +37,8 @@ final class LoginViewController: UIViewController {
             }
         }
     }
+    @IBAction func didTapNoAccountButton(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
