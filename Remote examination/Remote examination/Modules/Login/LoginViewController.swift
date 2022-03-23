@@ -40,7 +40,10 @@ final class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailField.placeholder = "Логин"
+        passwordField.placeholder = "Пароль"
         self.passwordField.isSecureTextEntry = !self.passwordField.isSecureTextEntry
+        
     }
 }
 
@@ -76,5 +79,5 @@ private extension LoginViewController {
             message: "Указаны неправильный логин или пароль, попробуйте снова"
         )
     }
-}
 
+}
