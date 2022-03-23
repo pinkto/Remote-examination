@@ -37,6 +37,11 @@ final class LoginViewController: UIViewController {
             }
         }
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.passwordField.isSecureTextEntry = !self.passwordField.isSecureTextEntry
+    }
 }
 
 // MARK: -
