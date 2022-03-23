@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D140492727EA10C600B4A04A /* MainScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D140492627EA10C600B4A04A /* MainScreenView.storyboard */; };
+		D140492B27EA173F00B4A04A /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D140492A27EA173F00B4A04A /* Moya */; };
+		D140492D27EA177000B4A04A /* ExamsAPITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140492C27EA177000B4A04A /* ExamsAPITarget.swift */; };
+		D140492F27EA207F00B4A04A /* StudentExamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140492E27EA207F00B4A04A /* StudentExamsModel.swift */; };
+		D140493A27EA2D6A00B4A04A /* ExamViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140493827EA2D6A00B4A04A /* ExamViewCell.swift */; };
+		D140493B27EA2D6A00B4A04A /* ExamViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D140493927EA2D6A00B4A04A /* ExamViewCell.xib */; };
+		D140493E27EA2FDC00B4A04A /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140493D27EA2FDC00B4A04A /* UIViewControllerExt.swift */; };
+		D140494027EA33FF00B4A04A /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140493F27EA33FF00B4A04A /* StringExt.swift */; };
+		D1BC1EB027E6DA910030998A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC1EAF27E6DA910030998A /* AppDelegate.swift */; };
+		D1BC1EB227E6DA910030998A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC1EB127E6DA910030998A /* SceneDelegate.swift */; };
+		D1BC1EB427E6DA910030998A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC1EB327E6DA910030998A /* ViewController.swift */; };
+		D1BC1EB727E6DA910030998A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1BC1EB527E6DA910030998A /* Main.storyboard */; };
+		D1BC1EB927E6DA930030998A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1BC1EB827E6DA930030998A /* Assets.xcassets */; };
+		D1BC1EBC27E6DA930030998A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1BC1EBA27E6DA930030998A /* LaunchScreen.storyboard */; };
+		D1BC1EC527E6DAF70030998A /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1BC1EC427E6DAF70030998A /* LoginView.storyboard */; };
+		D1BC1EC727E6E31F0030998A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC1EC627E6E31F0030998A /* LoginViewController.swift */; };
+		D1BC1ECF27E775EF0030998A /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC1ECE27E775EF0030998A /* EmailValidator.swift */; };
+		D1BC1ED127E776260030998A /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC1ED027E776260030998A /* Validator.swift */; };
+		D1BC1ED327E7768D0030998A /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC1ED227E7768D0030998A /* PasswordValidator.swift */; };
+		D1BC1ED827E87FFF0030998A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC1ED727E87FFF0030998A /* SignUpViewController.swift */; };
+		D1BC1EE127E9CD410030998A /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1BC1EE027E9CD410030998A /* SignUpView.storyboard */; };
+		D1BC1EE327E9D4A30030998A /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC1EE227E9D4A30030998A /* MainScreenViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D140492627EA10C600B4A04A /* MainScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreenView.storyboard; sourceTree = "<group>"; };
+		D140492C27EA177000B4A04A /* ExamsAPITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsAPITarget.swift; sourceTree = "<group>"; };
+		D140492E27EA207F00B4A04A /* StudentExamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentExamsModel.swift; sourceTree = "<group>"; };
+		D140493827EA2D6A00B4A04A /* ExamViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamViewCell.swift; sourceTree = "<group>"; };
+		D140493927EA2D6A00B4A04A /* ExamViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExamViewCell.xib; sourceTree = "<group>"; };
+		D140493D27EA2FDC00B4A04A /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		D140493F27EA33FF00B4A04A /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		D1BC1EAC27E6DA910030998A /* Remote examination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote examination.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1BC1EAF27E6DA910030998A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1BC1EB127E6DA910030998A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D1BC1EB327E6DA910030998A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1BC1EB627E6DA910030998A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1BC1EB827E6DA930030998A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1BC1EBB27E6DA930030998A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1BC1EBD27E6DA930030998A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1BC1EC427E6DAF70030998A /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
+		D1BC1EC627E6E31F0030998A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D1BC1ECE27E775EF0030998A /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		D1BC1ED027E776260030998A /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		D1BC1ED227E7768D0030998A /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		D1BC1ED727E87FFF0030998A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D1BC1EE027E9CD410030998A /* SignUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpView.storyboard; sourceTree = "<group>"; };
+		D1BC1EE227E9D4A30030998A /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1BC1EA927E6DA910030998A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D140492B27EA173F00B4A04A /* Moya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D140493227EA21CA00B4A04A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D140493827EA2D6A00B4A04A /* ExamViewCell.swift */,
+				D140493927EA2D6A00B4A04A /* ExamViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D140493327EA21E100B4A04A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D140493427EA21ED00B4A04A /* ExamsAPI */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D140493427EA21ED00B4A04A /* ExamsAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D140492C27EA177000B4A04A /* ExamsAPITarget.swift */,
+			);
+			path = ExamsAPI;
+			sourceTree = "<group>";
+		};
+		D140493527EA220600B4A04A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D140492E27EA207F00B4A04A /* StudentExamsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D140493C27EA2FC800B4A04A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D140493D27EA2FDC00B4A04A /* UIViewControllerExt.swift */,
+				D140493F27EA33FF00B4A04A /* StringExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D1BC1EA327E6DA910030998A = {
+			isa = PBXGroup;
+			children = (
+				D1BC1EAE27E6DA910030998A /* Remote examination */,
+				D1BC1EAD27E6DA910030998A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1BC1EAD27E6DA910030998A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1BC1EAC27E6DA910030998A /* Remote examination.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1BC1EAE27E6DA910030998A /* Remote examination */ = {
+			isa = PBXGroup;
+			children = (
+				D1BC1EBD27E6DA930030998A /* Info.plist */,
+				D1BC1EAF27E6DA910030998A /* AppDelegate.swift */,
+				D1BC1EB127E6DA910030998A /* SceneDelegate.swift */,
+				D1BC1EB327E6DA910030998A /* ViewController.swift */,
+				D1BC1EB827E6DA930030998A /* Assets.xcassets */,
+				D140493C27EA2FC800B4A04A /* Extensions */,
+				D1BC1EBA27E6DA930030998A /* LaunchScreen.storyboard */,
+				D1BC1EB527E6DA910030998A /* Main.storyboard */,
+				D140493527EA220600B4A04A /* Models */,
+				D1BC1ECC27E775B30030998A /* Modules */,
+				D140493327EA21E100B4A04A /* Network */,
+				D1BC1ECD27E775CC0030998A /* Validators */,
+			);
+			path = "Remote examination";
+			sourceTree = "<group>";
+		};
+		D1BC1EC327E6DAB50030998A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D1BC1EC427E6DAF70030998A /* LoginView.storyboard */,
+				D1BC1EC627E6E31F0030998A /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D1BC1ECC27E775B30030998A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D1BC1EDB27E884830030998A /* MainScreen */,
+				D1BC1ED427E8695B0030998A /* SingUp */,
+				D1BC1EC327E6DAB50030998A /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D1BC1ECD27E775CC0030998A /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				D1BC1ECE27E775EF0030998A /* EmailValidator.swift */,
+				D1BC1ED027E776260030998A /* Validator.swift */,
+				D1BC1ED227E7768D0030998A /* PasswordValidator.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		D1BC1ED427E8695B0030998A /* SingUp */ = {
+			isa = PBXGroup;
+			children = (
+				D1BC1ED727E87FFF0030998A /* SignUpViewController.swift */,
+				D1BC1EE027E9CD410030998A /* SignUpView.storyboard */,
+			);
+			path = SingUp;
+			sourceTree = "<group>";
+		};
+		D1BC1EDB27E884830030998A /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D140493227EA21CA00B4A04A /* Views */,
+				D1BC1EE227E9D4A30030998A /* MainScreenViewController.swift */,
+				D140492627EA10C600B4A04A /* MainScreenView.storyboard */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1BC1EAB27E6DA910030998A /* Remote examination */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1BC1EC027E6DA930030998A /* Build configuration list for PBXNativeTarget "Remote examination" */;
+			buildPhases = (
+				D1BC1EA827E6DA910030998A /* Sources */,
+				D1BC1EA927E6DA910030998A /* Frameworks */,
+				D1BC1EAA27E6DA910030998A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Remote examination";
+			packageProductDependencies = (
+				D140492A27EA173F00B4A04A /* Moya */,
+			);
+			productName = "Remote examination";
+			productReference = D1BC1EAC27E6DA910030998A /* Remote examination.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1BC1EA427E6DA910030998A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					D1BC1EAB27E6DA910030998A = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = D1BC1EA727E6DA910030998A /* Build configuration list for PBXProject "Remote examination" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1BC1EA327E6DA910030998A;
+			packageReferences = (
+				D140492927EA173F00B4A04A /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = D1BC1EAD27E6DA910030998A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1BC1EAB27E6DA910030998A /* Remote examination */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1BC1EAA27E6DA910030998A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D140492727EA10C600B4A04A /* MainScreenView.storyboard in Resources */,
+				D1BC1EBC27E6DA930030998A /* LaunchScreen.storyboard in Resources */,
+				D1BC1EB927E6DA930030998A /* Assets.xcassets in Resources */,
+				D1BC1EB727E6DA910030998A /* Main.storyboard in Resources */,
+				D1BC1EC527E6DAF70030998A /* LoginView.storyboard in Resources */,
+				D140493B27EA2D6A00B4A04A /* ExamViewCell.xib in Resources */,
+				D1BC1EE127E9CD410030998A /* SignUpView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1BC1EA827E6DA910030998A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D140492F27EA207F00B4A04A /* StudentExamsModel.swift in Sources */,
+				D1BC1EC727E6E31F0030998A /* LoginViewController.swift in Sources */,
+				D1BC1EB427E6DA910030998A /* ViewController.swift in Sources */,
+				D1BC1EB027E6DA910030998A /* AppDelegate.swift in Sources */,
+				D140494027EA33FF00B4A04A /* StringExt.swift in Sources */,
+				D1BC1ED327E7768D0030998A /* PasswordValidator.swift in Sources */,
+				D140493A27EA2D6A00B4A04A /* ExamViewCell.swift in Sources */,
+				D1BC1EE327E9D4A30030998A /* MainScreenViewController.swift in Sources */,
+				D1BC1ED127E776260030998A /* Validator.swift in Sources */,
+				D1BC1ED827E87FFF0030998A /* SignUpViewController.swift in Sources */,
+				D140492D27EA177000B4A04A /* ExamsAPITarget.swift in Sources */,
+				D1BC1EB227E6DA910030998A /* SceneDelegate.swift in Sources */,
+				D140493E27EA2FDC00B4A04A /* UIViewControllerExt.swift in Sources */,
+				D1BC1ECF27E775EF0030998A /* EmailValidator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1BC1EB527E6DA910030998A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1BC1EB627E6DA910030998A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1BC1EBA27E6DA930030998A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1BC1EBB27E6DA930030998A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1BC1EBE27E6DA930030998A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1BC1EBF27E6DA930030998A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1BC1EC127E6DA930030998A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Remote examination/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AnnCorp.Remote-examination";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1BC1EC227E6DA930030998A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Remote examination/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AnnCorp.Remote-examination";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1BC1EA727E6DA910030998A /* Build configuration list for PBXProject "Remote examination" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1BC1EBE27E6DA930030998A /* Debug */,
+				D1BC1EBF27E6DA930030998A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1BC1EC027E6DA930030998A /* Build configuration list for PBXNativeTarget "Remote examination" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1BC1EC127E6DA930030998A /* Debug */,
+				D1BC1EC227E6DA930030998A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D140492927EA173F00B4A04A /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = exactVersion;
+				version = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D140492A27EA173F00B4A04A /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D140492927EA173F00B4A04A /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D1BC1EA427E6DA910030998A /* Project object */;
+}
